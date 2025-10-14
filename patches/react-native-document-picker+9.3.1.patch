@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java b/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java
+index 5001525..c5d3c6f 100644
+--- a/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java
++++ b/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java
+@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
+ import com.facebook.react.bridge.ActivityEventListener;
+ import com.facebook.react.bridge.Arguments;
+ import com.facebook.react.bridge.BaseActivityEventListener;
+-import com.facebook.react.bridge.GuardedResultAsyncTask;
++import com.facebook.react.bridge.AsyncTask;
+ import com.facebook.react.bridge.Promise;
+ import com.facebook.react.bridge.ReactApplicationContext;
+ import com.facebook.react.bridge.ReactContext;
+@@ -229,7 +229,7 @@ public class RNDocumentPickerModule extends NativeDocumentPickerSpec {
+     }
+   }
+ 
+-  private static class ProcessDataTask extends GuardedResultAsyncTask<ReadableArray> {
++  private static class ProcessDataTask extends AsyncTask<ReadableArray> {
+     private final WeakReference<Context> weakContext;
+     private final List<Uri> uris;
+     private final String copyTo;

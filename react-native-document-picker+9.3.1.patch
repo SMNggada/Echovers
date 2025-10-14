@@ -1,0 +1,40 @@
+diff --git a/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java b/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java
+index abc1234..xyz5678 100644
+--- a/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java
++++ b/node_modules/react-native-document-picker/android/src/main/java/com/reactnativedocumentpicker/RNDocumentPickerModule.java
+@@ -18,7 +18,6 @@
+ import com.facebook.react.bridge.Promise;
+ import com.facebook.react.bridge.ReactApplicationContext;
+ import com.facebook.react.bridge.ReactContext;
+-import com.facebook.react.bridge.GuardedResultAsyncTask;
+ import com.facebook.react.bridge.ReactContextBaseJavaModule;
+ import com.facebook.react.bridge.ReactMethod;
+ import com.facebook.react.bridge.ReadableArray;
+@@ -229,7 +228,7 @@
+       new ProcessDataTask(getReactApplicationContext(), uris, copyTo, promise).execute();
+     }
+ 
+-    private static class ProcessDataTask extends GuardedResultAsyncTask<ReadableArray> {
++    private static class ProcessDataTask extends AsyncTask<Void, Void, ReadableArray> {
+       private final ReactContext mReactContext;
+       private final List<Uri> mUris;
+       private final String mCopyTo;
+@@ -243,14 +242,12 @@
+       }
+ 
+       @Override
+-      protected ReadableArray doInBackgroundGuarded() {
++      protected ReadableArray doInBackground(Void... voids) {
+         return processData(mReactContext, mUris, mCopyTo);
+       }
+ 
+       @Override
+-      protected void onPostExecuteGuarded(ReadableArray result) {
+-        if (result != null) {
+-          mPromise.resolve(result);
+-        }
++      protected void onPostExecute(ReadableArray result) {
++        mPromise.resolve(result);
+       }
+     }
+   }

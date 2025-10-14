@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "212430423106",
+    "project_id": "iqspace-53ec4",
+    "storage_bucket": "iqspace-53ec4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212430423106:android:e342191addd7e3fc4fd9db",
+        "android_client_info": {
+          "package_name": "com.iqspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212430423106-7gp2ja7pnt8b4bnlgut3h3m9hgmvkmo2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqspace",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "212430423106-6macvqqf89h3n82c3adn7i8c3oi9ek1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSa2dEuWddMRACuHMSVqu5nZ0aCAnvt_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212430423106-6macvqqf89h3n82c3adn7i8c3oi9ek1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

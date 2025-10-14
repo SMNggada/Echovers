@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "714622669418",
+    "project_id": "echovers-604ae",
+    "storage_bucket": "echovers-604ae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714622669418:android:b77c75a40843e0d729f013",
+        "android_client_info": {
+          "package_name": "com.echovers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714622669418-ft57qvva3kts2f3f071o8bb0engm47cd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.echovers",
+            "certificate_hash": "a0f3ff5e9359f3bd42e24947541ae8d282a0591d"
+          }
+        },
+        {
+          "client_id": "714622669418-v7hubfjibji455pglk8luehmdcrdjmqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.echovers",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "714622669418-5bgips4ncag7onkq6er4oanpcdonnfc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY8_6VETv9tH8YclbJae59knTuXJ3O_iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714622669418-5bgips4ncag7onkq6er4oanpcdonnfc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
